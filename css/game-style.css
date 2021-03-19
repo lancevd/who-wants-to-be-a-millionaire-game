@@ -91,7 +91,7 @@
     border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 150px;
+    margin-top: 0px;
     align-items: center;
 }
 
@@ -122,7 +122,7 @@
 
 .option-text {
     color: #fff;
-    padding: 20px 70px 20px 10px;
+    padding: 20px 60px 10px 10px;
     width: 100%;
 }
 
@@ -134,8 +134,8 @@
     border-radius: 25%;
     height: auto;
     font-size: 24px;
-    padding: 15px;
-    width: 400px;
+    padding: 10px;
+    width: 320px;
 }
 
 
@@ -193,7 +193,7 @@
 
 .score-ladder {
     padding-top: 50px;
-    font-size: 36px;
+    font-size: 26px;
 }
 
 .ladder-level {
