@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Over</title>
+    <link rel="stylesheet" href="css/game-style.css">
+</head>
+<body>
+
+    <div class="end-contain">
+        <div class="overlaid"> </div>
+        <div class="others">
+            <h1>Game Over</h1>
+            <h2>You Won</h2>
+            <h2 id="total-score">0</h2>
+
+            <form>
+            <input type="text" name="username" id="username" placeholder="Enter Username"> <br>
+            <button type="submit" id="save" >Save Score</button> <br>
+            </form>
+            <form>
+            <a href="game.html"><input type="button" class="btns" id="play" value="Play Again" onclick="goGame()" ></a> <br>
+            <a href="index.html"><input type="button" id="home" class="btns" value="Home" onclick="goHome()"></a>
+            </form>
+        </div>
+        
+
+        
+
+    </div>
+<script src="js/end-script.js"></script>
+</body>
+</html>

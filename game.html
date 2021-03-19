@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/game-style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Gameplay</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        
+
+        <div class="left">
+
+            <div class="top">
+                <!--Exit Button-->
+                <div id="exit" class="circle" > <i class="fas fa-door-open"></i> </div>
+            </div>
+            
+            <div class="exit-prompt hidden" >
+                <p>Are you sure you want to walk away?</p>
+                <p>You will lose your earnings😮</p>
+                <form class="decide">
+                    <div class="exit-but">Yes</div>
+                    <div class="exit-but">No</div>
+                </form>
+            </div>
+            
+            
+
+            <div class="question-number">  </div>
+            <div class="correct-pop hidden">
+                
+            </div>
+            <!--Question-->
+            <div id="question">A magnet would most likely attract which of the following?</div>
+            
+        
+            <!--Options-->
+            <div class="options-container">
+                <div class="align-left">
+                    <div class="options">
+                        <span class="label">A:</span> 
+                        <span class="option-text" data-number = "1">Metal</span></div>
+                    <br>
+                    <div class="options">
+                        <span class="label">C:</span> 
+                        <span class="option-text" data-number = "3">Wood</span></div>
+                    
+                    
+                </div>
+                
+                <div class="align-right">
+
+                    <div class="options">
+                        <span class="label">B:</span> 
+                        <span class="option-text" data-number = "2">Plastic</span></div>
+                    <br>                    
+                    <div class="options" data-number = "4">
+                        <span class="label">D:</span> 
+                        <span class="option-text" data-number = "4">The Wrong Man</span></div>
+                        
+                    
+                </div>
+
+
+            </div>
+
+           
+
+        </div>
+
+        <div class="right">
+            <div id="fifty" class="circle game-option"> 50:50</div>
+            <div id="call" class="circle game-option"><i class="fas fa-phone"></i></div>
+            <div id="audience" class="circle game-option"><i class="fas fa-users"></i></div>
+
+            <div class="score-ladder">
+                <div class="score-box lad ladder15">N10,000,000</div>
+                <div class="score-box lad ladder14">N5,000,000</div>
+                <div class="score-box lad ladder13 guarantee">N2,000,000</div>
+                <div class="score-box lad ladder12">N1,000,000</div>
+                <div class="score-box lad ladder11">N750,000</div>
+                <div class="score-box lad ladder10">N500,000</div>
+                <div class="score-box lad ladder9 guarantee">N250,000</div>
+                <div class="score-box lad ladder8">N200,000</div>
+                <div class="score-box lad ladder7">N100,000</div>
+                <div class="score-box lad ladder6">N50,000</div>
+                <div class="score-box lad ladder5">N25,000</div>
+                <div class="score-box lad ladder4 guarantee">N10,000</div>
+                <div class="score-box lad ladder3">N5,000</div>
+                <div class="score-box lad ladder2">N2,000</div>
+                <div class="score-box lad ladder1">N1,000</div>
+                
+            </div>
+        </div>
+    
+
+        <div class="overlay hidden"><button id="next">Next</button></div>
+
+
+    </div> <!--Container-->
+    <script src="js/script.js"></script>
+    <script src="js/all.js"></script>
+</body>
+</html>
