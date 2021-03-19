@@ -12,6 +12,8 @@ function goGame () {
     window.location.assign('/game.html');
 }
 
+
+
 saveScore = e =>{
     
     const score = {
@@ -22,8 +24,9 @@ saveScore = e =>{
     e.preventDefault();
     console.log(score);
     scoreList.push(score);
-    scoreList.splice(5);
-
+    if (scoreList.length >= 4){
+    scoreList.splice(0, 1);
+    };
     localStorage.setItem('scoreList', JSON.stringify(scoreList));
     window.location.assign('index.html');
 }

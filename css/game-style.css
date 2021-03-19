@@ -28,7 +28,8 @@
 /* ----LEFT SIDE---- */
 
 .left {
-    background: url('/images/gameplay-bg.jpg');
+    background: url('/images/gameplay-bg.jpg')no-repeat center;
+    background-size: cover;
     flex-basis: 70%;
     padding: 10px;
 }
@@ -162,7 +163,6 @@
     transform: translate(-50%, -50%);
     width: 600px;
     height: 600px;
-    
     padding: 6rem;
     border-radius: 5px;
     box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
@@ -180,6 +180,21 @@
     z-index: 5;
   }
 
+.winner {
+    background: url('/images/home-bg2.jpg') center no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 300px;
+    padding: 6rem;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    text-align: center;
+    margin: auto;
+}
 
 /*------Right Side-----*/
 

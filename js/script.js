@@ -332,18 +332,28 @@ for (let i = 0; i<options.length; i++){
             }, 2000);
 
                 // Guarantee Ladder
-    if (document.querySelector(`.ladder${questionCounter}`).classList.contains('guarantee')){
-        setTimeout (() => {
-            document.querySelector(`.ladder-level`).style.backgroundColor = 'green';
-        }, 500);
-        
-        setTimeout (() => {   
-            document.querySelector(`.ladder-level`).style.backgroundColor = 'green';
-        }, 1000);
-    } else {
-        // scoreTotal = 0;
-    }
-        } else {
+            if (document.querySelector(`.ladder${questionCounter}`).classList.contains('guarantee')){
+                setTimeout (() => {
+                    document.querySelector(`.ladder-level`).style.backgroundColor = 'green';
+                }, 500);
+                
+                setTimeout (() => {   
+                    document.querySelector(`.ladder-level`).style.backgroundColor = 'green';
+                }, 1000);
+                } else {
+                    // scoreTotal = 0;
+                }
+
+                if (scoreTotal == "N10,000,000") {
+                    document.querySelector('.winner').classList.remove('hidden');
+                    setTimeout(() => {
+                        document.querySelector('.winner').classList.add('overlay');
+                    },3000)
+
+                    window.location.assign('end.html');
+                    };
+                    } 
+            else {
                 // console.log(remainingQuestions[questionGenerator].answer);
                 optionsClass[i].classList.add('wrong-bg');
 
