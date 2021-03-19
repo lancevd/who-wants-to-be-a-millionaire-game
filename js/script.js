@@ -32,17 +32,13 @@ const maxQuestions = 15;
 function exitBtn (){
     exitPop.classList.remove('hidden');
     exitPop.classList.add('overlay');
+
+    setTimeout (() => {
+        window.location.assign('end.html')
+    },4000)
 };
 
 exit.addEventListener('click', exitBtn);
-
-function exitClicked () {
-    for (let i=0; i <= exitConfirm.length; i++){
-        exitConfirm.addEventListener('click', function (){
-            console.log(exitConfirm[i].innerText)
-        });
-    };
-}
 
 let allQuestions = [
     {
@@ -338,9 +334,9 @@ for (let i = 0; i<options.length; i++){
                 // Guarantee Ladder
     if (document.querySelector(`.ladder${questionCounter}`).classList.contains('guarantee')){
         setTimeout (() => {
-            document.querySelector(`.ladder-level`).style.backgroundColor = '';
+            document.querySelector(`.ladder-level`).style.backgroundColor = 'green';
         }, 500);
-        document.querySelector(`.ladder-level`).style.backgroundColor = 'transparent';
+        
         setTimeout (() => {   
             document.querySelector(`.ladder-level`).style.backgroundColor = 'green';
         }, 1000);
