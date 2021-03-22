@@ -345,8 +345,8 @@ for (let i = 0; i<options.length; i++){
                 }
 
                 if (scoreTotal == "N10,000,000") {
-                    document.querySelector('.winner').classList.remove('hidden');
                     setTimeout(() => {
+                        document.querySelector('.winner').classList.remove('hidden');
                         document.querySelector('.winner').classList.add('overlay');
                     },3000)
 
